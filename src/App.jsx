@@ -1,10 +1,13 @@
+import CaixaDeResposta from "./components/caixaDeResposta"
+import Formulario from "./components/formulario"
 
 
 function App() {
 
   return (
-    <div className="App">
-     <p>Ola</p>
+    <div>
+     <Formulario/>
+     <CaixaDeResposta/>
     </div>
   )
 }
