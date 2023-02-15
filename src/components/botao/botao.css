@@ -6,14 +6,17 @@
     box-sizing: border-box;
     width: 100%;
     padding: 24px;
-    background-color: white;
+    background-color: #BF5841;
     font-size: 24px;
+    font-weight: bold;
     border: 0px;
     border-radius: 4px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 24px 0px;
 }
 
 .campo-botao button:hover {
+    font-weight: bold;
     cursor: pointer;
-    color: thistle;
+    color: white;
 }
