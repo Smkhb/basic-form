@@ -1,12 +1,18 @@
-import CaixaDeResposta from '../caixaDeResposta'
 import './campoTexto.css'
 
-const CampoTexto = ({ label, placeholder, obrigatorio }) => {
+const CampoTexto = ({ label, placeholder, obrigatorio, valor, aoAlterado }) => {
+
+    const aoDigitado = evento => aoAlterado(evento.target.value)
+    
     return (
         <div className='campo-texto'>
             <label>{label}</label>
-            <input placeholder={placeholder} required={obrigatorio} />
-            <CaixaDeResposta/>
+            <input
+                value={valor}
+                onChange={aoDigitado} 
+                placeholder={placeholder} 
+                required={obrigatorio} 
+            />
         </div>
     )
 }
